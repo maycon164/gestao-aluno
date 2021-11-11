@@ -16,8 +16,18 @@ public class Aluno {
 		this.nascimento = nascimento;
 	}
 
+	public Aluno(String ra, String nome, LocalDate nascimento) {
+		this.ra = ra;
+		this.nome = nome;
+		this.nascimento = nascimento;
+	}
+
 	public long getId() {
 		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
 	}
 
 	public String getRa() {
@@ -46,6 +56,6 @@ public class Aluno {
 
 	public String toString() {
 
-		return "nome: " + this.nome + "\nra: " + this.ra + "\nnascimento: " + this.nascimento;
+		return "id: " + this.id + "\nnome: " + this.nome + "\nra: " + this.ra + "\nnascimento: " + this.nascimento;
 	}
 }
